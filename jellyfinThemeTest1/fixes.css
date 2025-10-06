@@ -1,0 +1,45 @@
+/* fixes.css - miscellaneous toggles & easy hide/show per docs */
+
+/* Hide "More Like This" */
+#similarCollapsible { display: none; }
+
+/* Hide Next Up */
+div.nextUpSection { display: none; }
+
+/* Hide star ratings */
+div.starRatingContainer { display: none; }
+
+/* Hide cast collapsible block (if desired) */
+#castCollapsible { display: none; }
+
+/* Replace Latest Movies / Latest TV Shows titles with custom text (docs technique) */
+#homeTab > div > div.section2 > div:nth-child(1) > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left > a > h2 { display: none; }
+#homeTab > div > div.section2 > div:nth-child(1) > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left > a > span { display: none; }
+#homeTab > div > div.section2 > div:nth-child(1) > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left > a:after {
+  content: 'Recently Added Movies ›';
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+/* Replace Latest TV Shows text */
+#homeTab > div > div.section2 > div:nth-child(2) > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left > a > h2 { display: none; }
+#homeTab > div > div.section2 > div:nth-child(2) > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left > a > span { display: none; }
+#homeTab > div > div.section2 > div:nth-child(2) > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left > a:after {
+  content: 'Recently Added TV Shows ›';
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+/* Custom background color example */
+.backgroundContainer, .dialog, html { background-color: #0fd0d0; }
+
+/* Darken background example for specific themes */
+.backgroundContainer.darken {
+  background-color: #000000;
+  filter: brightness(50%);
+}
+
+/* Misc general color tweaks */
+.dashboardGeneralForm { color: var(--text-primary); }

@@ -1,0 +1,29 @@
+/* header.css - header related toggles and header-button hiding per docs */
+
+/* Hide specific header buttons */
+.headerHomeButton { /* control via .hide if required */ }
+.headerCastButton { display: none; }         /* default hide (doc) */
+.headerSyncButton { display: none; }         /* hide sync icon */
+.headerButton.headerButtonRight.headerUserButton.paper-icon-button-light { display: none; } /* hide user icon if requested */
+
+/* Right header custom color (subtle accent) */
+.headerRight { color: var(--text-muted); }
+
+/* Console panel title color tweak (docs) */
+.mainDrawer-scrollContainer { color: var(--text-muted); }
+
+/* Full header tweak example (applies glass to the full header + main drawer) */
+.skinHeader,
+.mainDrawer,
+.emby-input,
+.emby-textarea,
+.emby-select,
+.navMenuOption-selected,
+.cardBox,
+.paperList {
+  background: linear-gradient(180deg, rgba(255,255,255,0.75), rgba(255,255,255,0.72));
+}
+.dark .skinHeader,
+.dark .mainDrawer {
+  background: linear-gradient(180deg, rgba(8,10,12,0.6), rgba(8,10,12,0.56));
+}

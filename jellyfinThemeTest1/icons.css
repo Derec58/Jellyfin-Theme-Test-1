@@ -1,0 +1,10 @@
+/* icons.css - choose one pack; uncomment the pack you want */
+
+/* Material Rounded (recommended, Apple-like) */
+@import url("https://cdn.jsdelivr.net/gh/prayag17/Jellyfin-Icons/round.css");
+
+/* Alternative: Material Outlined */
+/* @import url("https://cdn.jsdelivr.net/gh/prayag17/Jellyfin-Icons/Outline.css");
+
+/* Alternative: Font Awesome Regular */
+/* @import url("https://cdn.jsdelivr.net/gh/prayag17/Jellyfin-Icons/Font%20Awesome/regular.css");

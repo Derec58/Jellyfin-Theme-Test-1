@@ -1,0 +1,8 @@
+/* presets.css - example combined presets; toggle by import order or edit */
+
+/* "Minimal Apple" preset adjustments */
+.preset-apple .cardBox { border-radius: 10px; box-shadow: 0 10px 24px rgba(16,24,40,0.06); }
+.preset-apple .pageTitle { font-weight: 600; font-size: 1.05rem; }
+
+/* "Compact" preset */
+.preset-compact .cardBox { border-radius: 6px; transform: none; }

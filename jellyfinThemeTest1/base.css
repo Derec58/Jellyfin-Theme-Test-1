@@ -1,0 +1,76 @@
+/* base.css - design tokens and global basics (Apple / Ugreen style) */
+
+/* Root variables (colors chosen for clean, neutral UI) */
+:root{
+  --bg-0: #ffffff;
+  --bg-1: 245 100% 98%; /* hsl numeric fallback usage */
+  --surface: rgba(255,255,255,0.8);
+  --glass: rgba(255,255,255,0.6);
+  --glass-strong: rgba(255,255,255,0.85);
+  --text-primary: #111214;
+  --text-muted: #6b7280;
+  --accent: #0a84ff; /* subtle blue accent (Apple-like) */
+  --accent-2: #0071e3;
+  --muted-black-trans: rgba(0,0,0,0.35);
+  --radius-lg: 12px;
+  --radius-md: 8px;
+  --radius-sm: 4px;
+  --glass-blur: 10px;
+  --card-elevation: 0 6px 16px rgba(16,24,40,0.06);
+  --element-gap: 12px;
+}
+
+/* Dark mode tokens (keeps clean, muted dark look) */
+.dark {
+  --surface: rgba(8,10,15,0.66);
+  --glass: rgba(12,14,20,0.6);
+  --glass-strong: rgba(12,14,20,0.85);
+  --text-primary: #f7f7f8;
+  --text-muted: #9aa0a6;
+  --accent: #4aa3ff;
+  --card-elevation: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+/* Global resets and base typography */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: var(--text-primary);
+  background-color: var(--bg-0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Anchor default */
+a { color: inherit; text-decoration: none; }
+
+/* Soft visual defaults */
+.backgroundContainer {
+  background-color: var(--surface) !important;
+  background-image: none;
+  background-size: cover;
+  background-position: center;
+  filter: none;
+  transition: background-color .2s ease, filter .2s ease;
+}
+
+/* Dialogs and panels */
+.dialog, .cardBox, .paperList, .mainDrawer, .skinHeader {
+  background: linear-gradient(180deg, rgba(255,255,255,0.72), rgba(255,255,255,0.7));
+  backdrop-filter: blur(var(--glass-blur));
+  border-radius: var(--radius-md);
+  box-shadow: var(--card-elevation);
+}
+
+/* Dark adjustments */
+.dark .dialog, .dark .cardBox, .dark .paperList, .dark .mainDrawer, .dark .skinHeader {
+  background: linear-gradient(180deg, rgba(12,14,20,0.6), rgba(12,14,20,0.56));
+  backdrop-filter: blur(var(--glass-blur));
+}
+
+/* Utility spacing */
+.padded-left { padding-left: 1rem; }
+.padded-right { padding-right: 1rem; }
+.padded-bottom-page { padding-bottom: 1.25rem; }

@@ -1,0 +1,20 @@
+/* images.css - background images for login and home (doc examples) */
+
+/* Login page background image example - replace URL */
+#loginPage {
+  background: url('https://i.ytimg.com/vi/avCWDDox1nE/maxresdefault.jpg') center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
+/* If you want a homepage blurred backdrop (glass-like) */
+.backdropImage { display: none; } /* hide built-in backdrop to use our custom background */
+.backgroundContainer {
+  background-color: rgba(255,255,255,0.00);
+  background-image: url('https://i.ytimg.com/vi/avCWDDox1nE/maxresdefault.jpg');
+  filter: blur(10px) brightness(60%);
+  background-size: cover;
+  background-position: center;
+}

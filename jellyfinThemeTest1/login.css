@@ -1,0 +1,27 @@
+/* login.css - minimalistic login page adjustments from docs (Apple/minimal style) */
+
+/* Narrow the login form */
+#loginPage .readOnlyContent,
+#loginPage form {
+  max-width: 22em;
+  margin: 2.5rem auto;
+}
+
+/* Hide large "please login" header while keeping spacing */
+#loginPage h1 { display: none; }
+#loginPage .padded-left.padded-right.padded-bottom-page { margin-top: 50px; }
+
+/* Hide "manual" and "forgot" if desired to keep minimal UI */
+#loginPage .raised.cancel.block.btnManual.emby-button { display: none; }
+#loginPage .raised.cancel.block.btnForgotPassword.emby-button { display: none; }
+
+/* Make form background glassy and subtle */
+#loginPage form {
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  padding: 2rem;
+}
+.dark #loginPage form {
+  background: rgba(8,10,12,0.72);
+}

@@ -1,0 +1,25 @@
+/* inputs.css - text fields, select, border color, focus behavior */
+
+/* Border color and subtle background */
+.emby-input,
+.emby-textarea,
+.emby-select {
+  border-color: rgba(16,24,40,0.08);
+  background-color: rgba(250,250,250,0.6);
+  color: var(--text-primary);
+  border-radius: var(--radius-sm);
+  padding: .6rem .75rem;
+}
+
+/* Focused field - crisp accent ring */
+.emby-input:focus,
+.emby-textarea:focus,
+.emby-select-withcolor {
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 0 3px rgba(10,132,255,0.08);
+}
+
+/* Dark tweaks */
+.dark .emby-input,
+.dark .emby-textarea,
+.dark .emby-select { background-color: rgba(255,255,255,0.02); color: var(--text-primary); }

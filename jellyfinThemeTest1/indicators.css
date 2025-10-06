@@ -1,0 +1,23 @@
+/* indicators.css - played indicators, count indicators, series count transparency */
+
+/* Default played/watched indicator - subtle accent */
+.playedIndicator {
+  background: var(--accent);
+  border-radius: 999px;
+  width: 0.85rem;
+  height: 0.85rem;
+  display: inline-block;
+}
+
+/* Transparent and dark variant (from docs) */
+.playedIndicator.transparent {
+  background: rgba(0,0,0,0.35) !important;
+}
+
+/* Count indicator style (eg. Series episodes counter) */
+.countIndicator {
+  background: rgba(0,0,0,0.35);
+  color: var(--text-primary);
+  padding: .15rem .4rem;
+  border-radius: 999px;
+}

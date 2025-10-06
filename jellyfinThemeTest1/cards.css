@@ -1,0 +1,28 @@
+/* cards.css - cards, image rounding, hover, scaling, and card buttons */
+
+/* Card shape and gentle elevation */
+.cardBox {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform .14s ease, box-shadow .14s ease;
+  box-shadow: var(--card-elevation);
+}
+
+/* Subtle hover scale (no glow) */
+.cardBox:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 26px rgba(16,24,40,0.08);
+}
+
+/* Card content images rounded */
+.cardContent-button,
+.itemDetailImage {
+  border-radius: 8px;
+}
+
+/* Button overlays center */
+.cardOverlayContainer.itemAction { border-radius: 8px; }
+.cardOverlayButton-br { bottom: 6%; right: 12%; width: 76%; }
+
+/* Smaller default fonts inside cards for clean minimal look */
+.cardText { font-size: .94rem; color: var(--text-muted); }
