@@ -7,7 +7,7 @@
 .headerButton.headerButtonRight.headerUserButton.paper-icon-button-light { display: none; } /* hide user icon if requested */
 
 /* Right header custom color (subtle accent) */
-.headerRight { color: var(--text-muted); }
+.headerRight { color: #7962AD; }
 
 /* Console panel title color tweak (docs) */
 .mainDrawer-scrollContainer { color: var(--text-muted); }
@@ -27,3 +27,4 @@
 .dark .mainDrawer {
   background: linear-gradient(180deg, rgba(8,10,12,0.6), rgba(8,10,12,0.56));
 }
+
